@@ -3,3 +3,86 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  background-color: rgb(241, 189, 33);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-size: 40px;
+  color: black;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.container{
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+/* inizio gioco */
+.gioco{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.gioco .user h2{
+  font-size: 30px;
+  color: blue;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.gioco .cpu h2{
+  font-size: 30px;
+  color: red;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.gioco img{
+  height: 300px;
+  display: none;
+}
+
+img.show{
+  display: block;
+}
+
+/* inzio esito */
+#esito{
+  font-size: 100px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}
+/* inizio button */
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.btn{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px;
+  padding: 15px 25px;
+  background-color: rgb(241, 189, 33);
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
