@@ -1,13 +1,14 @@
+var username = prompt('Inserisci nome');
+document.getElementById('username').innerHTML = username;
+
 var gioca = document.getElementById("gioca");
 gioca.addEventListener('click',
 function() {
-  var username = prompt('Inserisci nome');
   var dadouser = Math.floor(Math.random() * 6) + 1;
   console.log(dadouser);
   var dadocpu = Math.floor(Math.random() * 6) + 1;
   console.log(dadocpu);
 
-  document.getElementById('username').innerHTML = username;
 
   if (dadouser > dadocpu){
     document.getElementById('esito').innerHTML = 'vittoria';
